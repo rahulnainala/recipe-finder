@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "My App",
+  title: "Meal Explorer",
   description: "Recipe Finder App",
 };
 
