@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 export default function SearchInput() {
@@ -125,7 +126,9 @@ export default function SearchInput() {
                 onClick={() => handleCardClick(recipe)}
               >
                 <div className="relative">
-                  <img
+                  <Image
+                    width={400}
+                    height={500}
                     src={recipe.strMealThumb}
                     alt={recipe.strMeal}
                     className="w-full h-56 object-cover"
